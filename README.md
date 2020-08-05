@@ -3,8 +3,8 @@
 The  Open Weather Map API() Test Framework consists of a library of python tests that are used to check the response of an API call to the server. It also runs basic system checks before calling API
 
 ## Usage
-To run all the tests you just need to run the script ./run_tests. (`code/owm-api-tests/run_tests.py`). For running it from outside the directory we can siply make simlink from `/usr/local/bin` to the desired location.
-It is recommended to run it with a command line flag '-v' so that a detailed report can be seen. Please see below for details.
+To run all the tests you just need to run the script ./run_tests. (`code/owm-api-tests/run_tests.py`). For running it from outside the directory, we can siply make simlink from `/usr/local/bin` to the desired location.
+It is recommended to run it with a command line flag `'-v'` so that a detailed report can be seen. Please see below for details.
 
 #### Options
 There are a number of command line arguments that you can use:
