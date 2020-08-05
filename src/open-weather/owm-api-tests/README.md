@@ -1,4 +1,4 @@
-# All the code for Open Weather Map API Test Framework
+# Open Weather Map API Test Framework
 
 The  Open Weather Map API() Test Framework consists of a library of python tests that are used to check the response of an API call to the server. It also runs absic system checks before calling API
 
@@ -19,9 +19,11 @@ Available options are:
  `-q, --quiet` -   Reduce output verbosity
          
  
+
 ## Adding New Tests
 To add a test you can either add a new file or a new test into an existing suite. The files and tests must be named such that they either start `test_...` or finish `..._test`.
 To ensure execution ordering the convention chosen internally is to name files `1_*_test.py`
+
 
 ### Notes on Test Dependencies
 The test framework should be robust to ensure it is reliable.
