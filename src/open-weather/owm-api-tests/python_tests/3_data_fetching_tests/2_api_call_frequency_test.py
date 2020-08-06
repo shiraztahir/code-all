@@ -35,16 +35,16 @@ def test_api_frequency():
 
     if not exception:  # url response is not empty
         while(timer < 5):  # give five API calls to check the frequency
-            url = "https: // api.openweathermap.org/data/2.5/weather?q = {}&" \
-                "units = metric & appid = {}".format(location_name, api_key)
+            url = "https://api.openweathermap.org/data/2.5/weather?q={}&" \
+                "units=metric&appid={}".format(location_name, api_key)
 
             r = requests.get(url)
             weather = r.json()
 
-            city = str(weather['name'])
             code = str(weather['cod'])
             if code == "200":   # valid response from server
                 print(api_frequency_count)
+                city = str(weather['name'])
                 # For a successful API call we should have the correct city
                 assert city == location_name, \
                     "Unable to fetch data for {}".format(location_name)
@@ -65,3 +65,4 @@ def test_api_frequency():
     else:
         assert False, \
             "Failed to establish a new connection: [Errno 11001]"
+test_api_frequency()

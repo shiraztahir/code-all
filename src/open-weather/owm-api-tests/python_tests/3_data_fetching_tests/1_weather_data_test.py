@@ -3,7 +3,7 @@
 """
 owm-api-test.
 
-A set of tests that fetch wether data from API and validate it
+A set of tests that fetch weather data from API and validate it.
 """
 # ============================================================================
 
