@@ -30,3 +30,6 @@ For this reason no tests should be accepted that rely on anything other than van
 
 ( TODO: If we decide to move on to making packages, these dependencies should be added to the package dependencies list.)
 
+### Notes on Test Philosophy
+The automated framework starts by checking internet connectivity and the health of open weather server by pinging it. If any of these fails, no further testing will be performed and the system will exit with an appropriate error message.
+If connectivity is fine, tests will continue and will try fetching data from server via API calls. Exception handling was also considered while writing the tests. 
