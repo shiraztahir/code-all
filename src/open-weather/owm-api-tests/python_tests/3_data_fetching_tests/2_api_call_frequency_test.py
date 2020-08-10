@@ -65,4 +65,3 @@ def test_api_frequency():
     else:
         assert False, \
             "Failed to establish a new connection: [Errno 11001]"
-test_api_frequency()
